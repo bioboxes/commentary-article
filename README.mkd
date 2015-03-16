@@ -1,0 +1,6 @@
+### Bioboxes Call for Action Commentary
+
+For bioboxes to be successful it should be adopted by the bioinformatics
+community when creating software. This repository contains the draft of a
+commentary manuscript which is a call to the bioinformatics community outlining
+the advantages of using containers and standardising their interfaces.
