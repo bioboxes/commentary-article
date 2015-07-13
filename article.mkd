@@ -2,13 +2,13 @@
 
 The increasing size of data in biology has demanded a corresponding increase in
 the reliance on software to automate tasks that have become impossible to do
-manually. Miniturisaton of DNA sequencers has allowed greater access to
+manually. Miniaturisation of DNA sequencers has allowed greater access to
 sequencing, and the era when only sequence centres could obtain a genome
 sequence has already passed. Biology in 2015 requires many researchers to have
 a pipette in hand one day, then be at a computer assembling a genome the next.
 
 As biology changes to where scientists are expected to have bioinformatics
-skills, bioinformatics software is becoming more and more of a hinderence to
+skills, bioinformatics software is becoming more and more of a hindrance to
 research. Creating new bioinformatics software is viewed as a research where
 and is published as an journal article. This follows that a bioinformatician
 developing software is measured by the same metric as a biologist studying a
@@ -20,16 +20,15 @@ An estimated 40-60% of web pages are served by a single implementation, the
 Apache web server, software that was developed X years ago and has been
 maintained by community contributions and bug fixes.
 
-Perverse incentives have to a fire-and-forget system of developing
-bioinformatics software - publishing multiple software articles is rewarded
-while no metrics exist for the value provided by fixing and maintaining
-existing software. The status quo serves authors by allowing them to generate
-long publication lists for their CV, and servers the publishers in generating
-revenue through article processing fees. The intended audience, the biologists
-trying to do research, are left to wade through a corpus of buggy, inconsistent
-and confusing bioinformatics software. The three symptoms bioinformatics
-software are: lack of software availability, difficulty installing software,
-and a lack of standardised interface for common bioinformatics tasks.
+Perverse incentives have lead to a fire-and-forget approach to software -
+publishing multiple software articles is rewarded while no metrics exist for
+maintaining existing software [chang2015]. The status quo serves authors by
+allowing them to generate long publication lists, and serves publishers by
+generating revenue through article processing fees. The intended audience, the
+biologists trying to do research, are then left to wade through a corpus of
+buggy, inconsistent and confusing tools. The three symptoms of this manifest as
+a lack of software availability, difficulty installing software, and no
+standardised interface for common bioinformatics tasks.
 
 ## Lack of software availability
 
@@ -65,7 +64,7 @@ because the wrong version of libboost-dev is installed.
 
 An alternative is dynamic languages such as Python, or languages running on a
 virtual machine such as Java. In the former the source code is directly run
-with compiling first, while the latter can be compiled indepdendent of the
+with compiling first, while the latter can be compiled independent of the
 operating system. In either case there is still the issue of having the correct
 versions of the language interpreter and dependent libraries installed. A
 variant of a python joke to illustrate the difficulty of this is:
@@ -102,7 +101,7 @@ dimensions around the world. This allows manufacturers to pack cargo in a
 container and it will transferable between lorry, train, and ship without
 having to unload for the method of transport. These standards are taken for
 granted but at the beginning of the railway age in the United Kingdom different
-railway gauges were used, and before shipping containers were introduce cargo
+railway gauges were used, and before shipping containers were introduced cargo
 had to be loaded as loose "break-bulk".
 
 Both these situations required large amounts of manual labour to transfer
@@ -115,12 +114,41 @@ genome assemblers, fastq preprocessors or multiple sequence aligners? The tools
 for each of these tasks essential perform the same operation, but each will
 have a different interface. As with publishing bioinformatics software this
 does not serve the users the software is built for - biologists and
-bioinformaticians. Researchers should be doing research rather than glueing
+bioinformaticians. Researchers should be doing research rather than gluing
 code together.
 
 ## Software containerisation
 
-The bioinformatics field has quickly recognised the oppourtunity provided by
-software containerisation. Docker allows the creation of a virtual container in
-which a developers code along with all dependent tools and libraries can be
-placed.
+The bioinformatics field has quickly recognised the opportunity provided by
+software containerisation. Docker is a platform allowing the creation of a
+virtual container in which a developers can add their code along with all the
+dependent tools and libraries can be placed. This container can then be used
+the the same way as if the tool were installed.
+
+Software containers have the opportunity to solve the first two points
+described above where tools can be made available as containers, and bundling
+all dependencies in the container removes the need for the user to compile and
+install anything except Docker itself. Without standardisation however
+bioinformatics will continue to suffer from mismatching interfaces and the
+reducing the role of bioinformaticians in research to gluing different tools
+together.
+
+## Bioboxes
+
+We have created the bioboxes project for standardising bioinformatics software.
+This specifies an interface for containerised software of common bioinformatics
+tasks. For example all Docker containers of genome assembler should have the
+same interface for passing the short read FASTQ file and for returning the
+contigs. This allows a user to reliably expect the same results with the same
+container,  and a standardised interface allows containers to use
+interchangeably - swapping one for another when improvements to an algorithm
+becomes available. 
+
+## Summary
+
+Without serious changes bioinformatics software will continue to work against
+the users it is written for, consuming time and effort. The use of software
+containers with standardised interfaces has the potential. This should
+ultimately make the work of biologists easier by making it simpler to access a
+great variety of software, and also make developers lives easier by making
+their software available to a greater audience.
