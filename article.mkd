@@ -1,4 +1,22 @@
-# Bioinformatics software serves everyone except the user
+# Title Page
+
+*Title*: Software containerisation can solve bioinformatics usability problems
+
+*Running Title*: Bioinformatics software containers
+
+# Abstract
+
+Software is now both central and essential to modern biology. Yet lack of
+availability, difficult installations, and poor user interfaces make software
+hard to obtain and use. The recent update in software containerisation by the
+software industry, as exemplified by Docker, has the potential to solve these
+problems.
+
+# Keywords
+
+bioinformatics, software, Docker, standards, usability
+
+# Main Text
 
 The increasing size of data in biology has demanded a corresponding increase in
 the reliance on software to automate tasks that have become impossible to do
@@ -108,6 +126,22 @@ problems of installation or usability. Furthermore a standardised interface
 allows containers to be used interchangeably - swapping one for another when
 improvements or a different an algorithm become available. 
 
+# Conclusion
+
+Without serious changes bioinformatics software will continue to work against
+the users it is written for, consuming time and effort. The use of software
+containers with standardised interfaces has the potential to make the work of
+biologists easier by making it simpler to access a great variety of software,
+and also developers easier by making their software available and usable to a
+greater audience.
+
+# Competing interests
+
+Docker Inc paid for MB's flight and accommodation allowing him to present
+research at DockerCon Europe.
+
+# Illustrations and figures
+
 ``` bash
 
 pip install --user bioboxes
@@ -116,12 +150,3 @@ biobox short_read_assembler bioboxes/velvet --input reads.fq.gz --output contigs
 biobox short_read_assembler bioboxes/megahit --input reads.fq.gz --output contigs.fa
 
 ```
-
-## Summary
-
-Without serious changes bioinformatics software will continue to work against
-the users it is written for, consuming time and effort. The use of software
-containers with standardised interfaces has the potential to make the work of
-biologists easier by making it simpler to access a great variety of software,
-and also developers easier by making their software available and usable to a
-greater audience.
