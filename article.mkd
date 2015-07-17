@@ -128,12 +128,20 @@ for a common bioinformatics tasks such as a short read assembly, should then
 have the method of accepting input files and returning output files.
 
 This provides a mechanism where, with a combination of Docker containers and
-community-standardised interfaces, a biologist or bioinformatician has access
-to a large body of bioinformatics software. This allows a user to reliably
-expect results from a bioinformatics container without the usual associated
-problems of installation or usability. Furthermore a standardised interface
+standardised interfaces, a biologist or bioinformatician has access to a large
+body of bioinformatics software. This allows users to reliably expect results
+from a bioinformatics container without the usual associated problems of
+installation or usability. Figure 1 illustrates how a standardised interface
 allows containers to be used interchangeably - swapping one for another when
 improvements or a different an algorithm become available. 
+
+We have started this project to be community-driven and ask for feedback from
+the community. Developers can contribute biobox-compatible Docker images of
+their software. The biologists and bioinformaticians can request that biobox
+versions of software are made. This project depends on feedback from the
+community and will only solve the current bioinformatics software problems if
+the the bioboxes are useful to biologists, while helping developers to package
+and share their tools.
 
 # Conclusion
 
@@ -151,9 +159,13 @@ research at DockerCon Europe.
 
 # Illustrations and figures
 
+## Figure 1
+
+Example of bioboxes command line interface.
+
 ``` bash
 
-pip install --user bioboxes
+pip install --user biobox_cli
 
 biobox short_read_assembler bioboxes/velvet --input reads.fq.gz --output contigs.fa
 biobox short_read_assembler bioboxes/megahit --input reads.fq.gz --output contigs.fa
