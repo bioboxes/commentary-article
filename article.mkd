@@ -95,7 +95,7 @@ same interface? How about genome assemblers, fastq preprocessors or multiple
 sequence aligners? The tools for each of these tasks essential perform the same
 operation, but each has a different interface. As with publishing
 bioinformatics software this does not serve the users the software is built for
-- biologists and bioinformaticians.
+\- biologists and bioinformaticians.
 
 ## Software containerisation and standardisation
 
@@ -106,17 +106,26 @@ tools and libraries. These containers can then be shared and used the same way
 as if the tool itself were installed. Containerisation has the opportunity to
 solve the problems of software availability and installation, where bundling
 all dependencies removes the need for the user to compile and install anything
-except Docker itself. Without standardisation however bioinformatics will
-continue to suffer from mismatching interfaces and the reducing the role of
-bioinformaticians from computational researcher to the custodians of gluing
-different tools together.
+except Docker itself.
+
+The advantages of containerisation of have been adopted by the assembly
+benchmarking projects nucleotid.es and CAMI. The advantage provided by
+containers is that the benchmarked tool is available for use. This contrasts
+with previous benchmarking projects where the published results are difficult
+to replicate as the computational steps taken by the competitors are often not
+available.
+
+Even with these adavantage provided by container, without standardisation
+bioinformatics will continue to suffer from mismatching interfaces between
+tools in research pipelines. The time consuming job of maintaining these
+pipelines falls to the bioinformatician reducing their role from computational
+researcher to the custodians of gluing different tools together.
 
 To this end, we have created the bioboxes project with the aim of specifying
-agreed interfaces to bioinformatics containers. This project outlines an
-interface that each type of bioinformatics container should support. Each
-biobox container, for a common bioinformatics tasks such as a short read
-assembly, should then have the same interface for accepting input files and
-arguments, and producing the same output files.
+standardised interfaces to bioinformatics containers. This project outlines an
+interface each type of bioinformatics container should support. Each biobox,
+for a common bioinformatics tasks such as a short read assembly, should then
+have the method of accepting input files and returning output files.
 
 This provides a mechanism where, with a combination of Docker containers and
 community-standardised interfaces, a biologist or bioinformatician has access
