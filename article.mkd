@@ -125,11 +125,12 @@ tools in research pipelines. The time consuming job of maintaining these
 pipelines falls to the bioinformatician reducing their role from computational
 researcher to the custodians of gluing different tools together.
 
-To this end, we have created the bioboxes project with the aim of specifying
-standardised interfaces to bioinformatics containers. This project outlines an
-interface each type of bioinformatics container should support. Each biobox,
-for a common bioinformatics tasks such as a short read assembly, should then
-have the method of accepting input files and returning output files.
+To this end, we have created the bioboxes project [bioboxes.org] with the aim
+of specifying standardised interfaces to bioinformatics containers. This
+project outlines an interface each type of bioinformatics container should
+support. Each biobox, for a common bioinformatics tasks such as a short read
+assembly, should then have the method of accepting input files and returning
+output files.
 
 This provides a mechanism where, with a combination of Docker containers and
 standardised interfaces, a biologist or bioinformatician has access to a large
@@ -137,7 +138,7 @@ body of bioinformatics software. This allows users to reliably expect results
 from a bioinformatics container without the usual associated problems of
 installation or usability. Figure 1 illustrates how a standardised interface
 allows containers to be used interchangeably - swapping one for another when
-improvements or a different an algorithm become available. 
+improvements or a different an algorithm become available.
 
 We have started this project to be community-driven and ask for feedback from
 the community. Developers can contribute biobox-compatible Docker images of
