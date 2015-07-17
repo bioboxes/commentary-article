@@ -1,8 +1,10 @@
 # Title Page
 
-*Title*: Software containerisation can solve bioinformatics usability problems
+*Title*:
 
-*Running Title*: Bioinformatics software containers
+Bioboxes - standardised containers to make bioinformatics software more accessible
+
+*Running Title*: bioboxes software containers
 
 # Abstract
 
