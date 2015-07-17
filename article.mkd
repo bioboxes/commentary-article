@@ -115,7 +115,9 @@ benchmarking projects nucleotid.es and CAMI. The advantage provided by
 containers is that the benchmarked tool is available for use. This contrasts
 with previous benchmarking projects where the published results are difficult
 to replicate as the computational steps taken by the competitors are often not
-available.
+available. In addition to benchmarking, using software containers would provide
+researchers with the option to reproduce published results, allowing
+replicating and expanding on the work of others.
 
 Even with these adavantage provided by container, without standardisation
 bioinformatics will continue to suffer from mismatching interfaces between
