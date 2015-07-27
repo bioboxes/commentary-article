@@ -2,7 +2,7 @@
 
 *Title*:
 
-Bioboxes - standardised containers to make bioinformatics software more accessible
+Bioboxes - standardised containers for interchangeable bioinformatics software
 
 *Running Title*: bioboxes software containers
 
@@ -10,9 +10,10 @@ Bioboxes - standardised containers to make bioinformatics software more accessib
 
 Software is now both central and essential to modern biology. Yet lack of
 availability, difficult installations, and poor user interfaces make software
-hard to obtain and use. The recent update in software containerisation by the
-software industry, as exemplified by Docker, has the potential to solve these
-problems.
+hard to obtain and use. Containerisation, as exemplified by Docker, has the
+potential to solve the problems associated with sharing software. Bioboxes are
+standardised bioinformatics containers around common interfaces. This has the
+potential to make bioinformatics containers are interchangeable.
 
 # Keywords
 
@@ -23,23 +24,22 @@ bioinformatics, software, Docker, standards, usability
 The increasing size of data in biology has demanded a corresponding increase in
 the reliance on software to automate tasks that have become impossible to do
 manually. Miniaturisation of DNA sequencers has allowed greater access to
-sequencing, and the era when only sequence centres could obtain a genome
-sequence has already passed. Biology in 2015 requires researcher to be using a
-pipette one day, and running genome assembly software the next. As biology
-changes to where scientists are expected to regularly use bioinformatics tools,
-the quality of these tools is becoming more and more of a hindrance to
-research.
+genomic data, and the era when only large facilities could obtain this has
+already passed. Biology in 2015 requires a researcher to be using a pipette one
+day, and running genome assembly software the next. As biology changes to where
+scientists are expected to regularly use bioinformatics tools, the poor quality
+of software is becoming more and more of a hindrance to research.
 
-Bioinformatics software is seen as research output and published in journal
+Bioinformatics software is seen as research output and published as journal
 articles. This then follows that a bioinformatics software developer is
-measured by the same metric as a biologist studying a novel protein mechanism -
+measured by the same metric as a biologist studying novel protein mechanisms -
 the more articles the better. This has lead to proliferation of bioinformatics
 software - the Wikipedia page for sequence aligners alone lists 64 different
 implementations.
 
-Perverse incentives have lead to a fire-and-forget approach to software -
+Perverse incentives have lead to a fire-and-forget approach to software;
 publishing multiple software articles is rewarded while no metrics exist for
-maintaining existing software [chang2015]. The status quo serves authors by
+maintaining existing software [chang2015]. The *status quo* serves authors by
 allowing them to generate long publication lists, and serves publishers by
 generating revenue through article processing fees. The intended audience, the
 biologists trying to do research, are then left to wade through a corpus of
@@ -53,41 +53,45 @@ A ridiculous situation in the publication system is that publishing an article
 about software does not guarantee that the tool is actually available to
 download. Unless the journal specifically mandates the use of a third party
 service to host the software, the article may describe the tool as being
-"available on request" - the reader has to contact the author for access.
+"available on request" - the reader has to contact the author for access. If
+the author cannot be contacted then this software essentially ceases to exist.
 
 Another common situation is that software is unavailable because the developer
 has moved on to a different position, or if the research funding supporting
 their position ends. This results in the developer no longer being able to
 maintain the software, the website describing the tool no longer existing, or
-both. A related study showed that in many cases bioinformatics web addresses
-are often not available 2-3 years after the article describing it was
-published. [klien2014]
+both. A study related to this effect showed that, in many cases, bioinformatics
+web addresses are often not available 2-3 years after the article describing it
+was published. [klien2014]
 
 ## Difficulty installing software
 
 Differences between operating systems mean a tool written in a language such as
-C++ cannot not be distributed as a ready-to-use version, instead as the source
-code must be first compiled by the user for the operating system. Compilation
-is the processes of converting the source code into a binary which can be run.
-This is not a simple task due to the limited experience biologists may be
-expected to have with C++ build tools. The difficulty of compiling source code
-is compounded when the tool requires external software libraries for the tool
-to work. This requires fetching compiling and installing these dependent
-libraries first. The correct version of the dependency is also crucial
-otherwise a biologist may be stuck trying to decipher obscure output such as
-GNU make reporting a g++ error because the wrong version of libboost-dev is
-installed.
+C++ cannot not be distributed as a ready-to-use version, instead the source
+code must be first 'compiled' by the user for the operating system. The process
+of compilation converts this source code into usable binary which can then be
+run by the user. Compiling source code however is not a simple task due to the
+limited experience biologists may be expected to have with C++ build tools.
+
+This difficulty is compounded when a tool depends on other additional
+software written by third parties. Compiling the tool then first requires
+fetching compiling and installing all these dependent libraries first. The
+version of a software dependency is also crucial as an incorrect version can
+cause the compilation to fail. Software dependencies and versioning often leads
+to absurd situations where a biologist is expected to decipher obscure output
+such as GNU make reporting a g++ error because the wrong version of
+libboost-dev is installed.
 
 ## Lack of standards
 
 Every piece of bioinformatics software has a different interface. For example
 no two short read aligners may be expected to use the same method to identify
 the input file for processing, e.g. this might be `--input`, `--fastq` or the
-position in the input arguments. The generated output BAM file may be created
-in different locations, or the output may not be stored in BAM at all. Across
-all available short read aligners this leads to a multitude of different ways
-of doing the same task each time: take a list of sequence reads and return a
-description of how they map to a reference genome.
+position in the input arguments. The output BAM file generated by the tool may
+be created in different locations, or the output may not be stored in BAM at
+all. Across all available short read aligners this leads to a multitude of
+different ways of doing the same task each time: take a list of sequence reads
+and return a description of how they map to a reference genome.
 
 This leads to the current situation in bioinformatics - where many
 bioinformaticians spend much of their time shifting data between the
@@ -95,50 +99,50 @@ incompatible interfaces of different tools. Is there a good reason why short
 read aligners, which all do the same task, should not be standardised with the
 same interface? How about genome assemblers, fastq preprocessors or multiple
 sequence aligners? The tools for each of these tasks essential perform the same
-operation, but each has a different interface. As with publishing
-bioinformatics software this does not serve the users the software is built for
-\- biologists and bioinformaticians.
+operation, but each has a different interface. Again, the current situation
+does not serve intended users the software is written for \- biologists and
+bioinformaticians.
 
 ## Software containerisation and standardisation
 
 The bioinformatics field has quickly recognised the opportunity provided by
-software containerisation. Docker is a platform allowing the creation virtual
-containers in which developers can place their code along with all the required
-tools and libraries. These containers can then be shared and used the same way
-as if the tool itself were installed. Containerisation has the opportunity to
-solve the problems of software availability and installation, where bundling
-all dependencies removes the need for the user to compile and install anything
-except Docker itself.
+software containerisation. The Docker platform allows the creation of virtual
+containers in which developers can place their code along with all required
+libraries and scripts. These containers can then be shared and used the same
+way as if the tool itself were installed.
 
-The advantages of containerisation of have been adopted by the assembly
-benchmarking projects nucleotid.es and CAMI. The advantage provided by
-containers is that the benchmarked tool is available for use. This contrasts
-with previous benchmarking projects where the published results are difficult
-to replicate as the computational steps taken by the competitors are often not
-available. In addition to benchmarking, using software containers would provide
-researchers with the option to reproduce published results, allowing
-replicating and expanding on the work of others.
+Containerisation has the potential to solve the problems of software
+availability and installation outlined here, where bundling all dependencies
+removes the need for the user to compile and install anything except Docker
+itself. Software containers also provide researchers with the option to
+reproduce existing published results to replicate or expand on the work of
+others. An example of this are the nucleotid.es and CAMI assembly benchmarking
+projects, where a containerised benchmarked tool is available for download by
+users.
 
-Even with these adavantage provided by container, without standardisation
-bioinformatics will continue to suffer from mismatching interfaces between
-tools in research pipelines. The time consuming job of maintaining these
-pipelines falls to the bioinformatician reducing their role from computational
-researcher to the custodians of gluing different tools together.
+Even with these outlined advantages, without standardisation bioinformatics
+will continue to suffer from mismatching interfaces between tools in software
+pipelines. The time consuming job of maintaining these pipelines then falls to
+bioinformatician reducing their role from computational researchers to the
+custodians of gluing different tools together.
 
-To this end, we have created the bioboxes project [bioboxes.org] with the aim
-of specifying standardised interfaces to bioinformatics containers. This
-project outlines an interface each type of bioinformatics container should
-support. Each biobox, for a common bioinformatics tasks such as a short read
-assembly, should then have the method of accepting input files and returning
-output files.
+To this end we, developers involved in both CAMI and nucleotid.es, have created
+the bioboxes project [bioboxes.org] with the aim of specifying standardised
+bioinformatics containers. A biobox is a software container with a standardised
+interface, where this interface describes which input files and parameters are
+accepted, and which output files are returned. An example is a short-read
+assembler which takes an input paired-fastq file and returns a contig file.
+Each developer creating a biobox should make sure the Docker container accepts
+these inputs and returns the expected outputs.
 
-This provides a mechanism where, with a combination of Docker containers and
-standardised interfaces, a biologist or bioinformatician has access to a large
-body of bioinformatics software. This allows users to reliably expect results
-from a bioinformatics container without the usual associated problems of
-installation or usability. Figure 1 illustrates how a standardised interface
-allows containers to be used interchangeably - swapping one for another when
-improvements or a different an algorithm become available.
+Specifying the same interface for bioinformatics performing the same task
+allows one to swapped for another in a bioinformatics pipeline. This creates an
+interchangeable parts list for researchers which, combined with Docker
+containerisation, means biologists and bioinformaticians has access and can
+immediately use a large body of bioinformatics software. Figure 1 contrasts the
+existing state of bioinformatics software with bioboxes standardised software
+containers. Figure 2 shows a command line interface to bioboxes which allows
+the reader to test using biobox containers.
 
 We have started this project to be community-driven and ask for feedback from
 the community. Developers can contribute biobox-compatible Docker images of
@@ -165,6 +169,11 @@ research at DockerCon Europe.
 # Illustrations and figures
 
 ## Figure 1
+
+Contrasting the current software situation in bioinformatics with using biobox
+Docker containers with standardised interfaces.
+
+## Figure 2
 
 Example of bioboxes command line interface.
 
