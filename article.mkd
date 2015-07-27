@@ -13,7 +13,7 @@ availability, difficult installations, and poor user interfaces make software
 hard to obtain and use. Containerisation, as exemplified by Docker, has the
 potential to solve the problems associated with sharing software. Bioboxes are
 standardised bioinformatics containers around common interfaces. This has the
-potential to make bioinformatics containers are interchangeable.
+potential to make bioinformatics containers interchangeable.
 
 # Keywords
 
@@ -23,12 +23,12 @@ bioinformatics, software, Docker, standards, usability
 
 The increasing size of data in biology has demanded a corresponding increase in
 the reliance on software to automate tasks that have become impossible to do
-manually. Miniaturisation of DNA sequencers has allowed greater access to
-genomic data, and the era when only large facilities could obtain this has
-already passed. Biology in 2015 requires a researcher to be using a pipette one
-day, and running genome assembly software the next. As biology changes to where
-scientists are expected to regularly use bioinformatics tools, the poor quality
-of software is becoming more and more of a hindrance to research.
+manually. Miniaturisation of DNA sequencers and improvements on mass spectrometers
+has allowed greater access to genomic and proteomic data, and the era when only
+large facilities could obtain this has already passed. Biology in 2015 requires a
+researcher to be using a pipette one day, and running genome assembly software the next.
+As biology changes to where scientists are expected to regularly use bioinformatics tools,
+the poor quality of software is becoming more and more of a hindrance to research.
 
 Bioinformatics software is seen as research output and published as journal
 articles. This then follows that a bioinformatics software developer is
@@ -103,7 +103,7 @@ operation, but each has a different interface. Again, the current situation
 does not serve intended users the software is written for \- biologists and
 bioinformaticians.
 
-## Software containerisation and standardisation
+## Software containerisation, standardisation and reproducibility
 
 The bioinformatics field has quickly recognised the opportunity provided by
 software containerisation. The Docker platform allows the creation of virtual
@@ -153,6 +153,25 @@ community and the website contains links on how to get involved through filling
 file bug reports or asking questions in the chat room. Ultimately
 standardisation and the ensuing benefits will only be successful if they are
 both accepted and driven by the bioinformatics community itself.
+
+Another important issue addressed by the use of pre-configurated containers is the
+reproducibility in bioinformatics research. As being a mature and independent field
+of research, bioinformatics projects often relies on data analysis. An important
+issue to consider is how reproducible results are when different software platforms
+are used. Containerized software do not resolve completely this issue but they
+help to reduce this by having a common and isolated environment that will be
+always the same during the software usage, independently of operating system
+or libraries.
+
+# Potential Drawbacks and Points to Discuss
+
+The use of containerized applications as proposed by Docker is a new way to
+create and ship software to others. As any other new technology, this brings
+new issues that should be addressed, like software licensing, for example.
+In the face of this new possibility, developers should think ahead and try to
+use licenses that do not restrict their software of being distributed in a
+containerized way.
+
 
 # Conclusion
 
