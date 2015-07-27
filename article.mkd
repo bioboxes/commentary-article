@@ -1,8 +1,20 @@
 # Title Page
 
-*Title*:
+*Title*: Bioboxes - standardised containers for interchangeable bioinformatics
+software
 
-Bioboxes - standardised containers for interchangeable bioinformatics software
+*Authors*: Peter Belmann (1), Johannes Dröge (2), Michael Barton \* (3)
+
+  1) Universität Bielefeld, Technische Fakultät, AG Praktische Informatik,
+  D-33594 Bielefeld, Germany
+
+  2) Max-Planck-Institut für Informatik, Computational Genomics and
+  Epidemiology, Campus E1 4, 66123 Saarbrücken, Germany
+
+  3) DOE Joint Genome Institute, 2800 Mitchell Drive, Walnut Creek, CA 94598,
+  USA
+
+  \* Corresponding author: mail@michaelbarton.me.uk
 
 *Running Title*: bioboxes software containers
 
@@ -168,7 +180,26 @@ greater audience.
 Docker Inc paid for MB's flight and accommodation allowing him to present
 research at DockerCon Europe.
 
-# Illustrations and figures
+# Authors' contributions
+
+PB, JD and MB conceived and created bioboxes, implementing all code and
+creating documentation. MB wrote the manuscript.
+
+# Authors' information
+
+PB and JG are developers in CAMI, a project to benchmark bioinformatics tools
+for metagenomics. MB created nucleotid.es a project to benchmark genome
+assembly software. Both of these projects use Docker containers to ensure
+benchmarking are reproducible.
+
+# Acknowledgements
+
+The authors with to thank Rutger Vos, Scott Edmunds, Andreas Bremges, Yasset
+Perez-Riverol, and Felipe Leprevost for proof reading the article. The authors
+also wish to thank all members of the bioinformatics community who have
+provided feedback through comments, issues and the bioboxes chatroom.
+
+# Figure legends
 
 ## Figure 1
 
