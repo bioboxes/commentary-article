@@ -144,13 +144,15 @@ existing state of bioinformatics software with bioboxes standardised software
 containers. Figure 2 shows a command line interface to bioboxes which allows
 the reader to test using biobox containers.
 
-We have started this project to be community-driven and ask for feedback from
-the community. Developers can contribute biobox-compatible Docker images of
-their software. The biologists and bioinformaticians can request that biobox
-versions of software are made. This project depends on feedback from the
-community and will only solve the current bioinformatics software problems if
-the the bioboxes are useful to biologists, while helping developers to package
-and share their tools.
+We ask that developers try following the documentation on the bioboxes.org
+website and contribute biobox-compatible Docker images of their software. The
+users, biologists and bioinformaticians, editors and reviewers, should begin
+requesting that biobox versions of software are available alongside
+publications. At the same time the bioboxes project welcomes feedback from the
+community and the website contains links on how to get involved through filling
+file bug reports or asking questions in the chat room. Ultimately
+standardisation and the ensuing benefits will only be successful if they are
+both accepted and driven by the bioinformatics community itself.
 
 # Conclusion
 
