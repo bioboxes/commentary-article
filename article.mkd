@@ -35,12 +35,13 @@ bioinformatics, software, Docker, standards, usability
 
 The increasing size of data in biology has demanded a corresponding increase in
 the reliance on software to automate tasks that have become impossible to do
-manually. Miniaturisation of DNA sequencers has allowed greater access to
-genomic data, and the era when only large facilities could obtain this has
-already passed. Biology in 2015 requires a researcher to be using a pipette one
-day, and running genome assembly software the next. As biology changes to where
-scientists are expected to regularly use bioinformatics tools, the poor quality
-of software is becoming more and more of a hindrance to research.
+manually [Ouzounis2012]. Miniaturisation of DNA sequencers has allowed greater
+access to genomic data, and the era when only large facilities could obtain
+this has already passed. Biology in 2015 requires a researcher to be using a
+pipette one day, and running genome assembly software the next. As biology
+changes to where scientists are expected to regularly use bioinformatics tools,
+the poor quality of software is becoming more and more of a hindrance to
+research.
 
 Bioinformatics software is seen as research output and published as journal
 articles. This then follows that a bioinformatics software developer is
@@ -55,9 +56,9 @@ maintaining existing software [chang2015]. The *status quo* serves authors by
 allowing them to generate long publication lists, and serves publishers by
 generating revenue through article processing fees. The intended audience, the
 biologists trying to do research, are then left to wade through a corpus of
-buggy, inconsistent and confusing tools. This commentary addresses the three
-symptoms of this: a lack of software availability, difficulty installing
-software, and no standardised interface for common tasks.
+buggy, inconsistent and confusing tools [stein2002]. This commentary addresses
+the three symptoms of this: a lack of software availability, difficulty
+installing software, and no standardised interface for common tasks.
 
 ## Lack of software availability
 
