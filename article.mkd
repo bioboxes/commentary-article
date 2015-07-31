@@ -115,26 +115,25 @@ users the software is written for \- biologists and bioinformaticians.
 
 ## Software containerisation and standardisation
 
-The bioinformatics field has quickly recognised the opportunity provided by
-software containerisation. The Docker platform allows the creation of virtual
-containers in which developers can place their code along with all required
-libraries and scripts. These containers can then be shared and used the same
-way as if the tool itself were installed.
-
-Containerisation has the potential to solve the problems of software
-availability and installation outlined here, where bundling all dependencies
-removes the need for the user to compile and install anything except Docker
-itself. Software containers also provide researchers with the option to
-reproduce existing published results to replicate or expand on the work of
-others. An example of this are the nucleotid.es and CAMI assembly benchmarking
-projects, where a containerised benchmarked tool is available for download by
-users.
-
-Even with these outlined advantages, without standardisation bioinformatics
-will continue to suffer from mismatching interfaces between tools in software
-pipelines. The time consuming job of maintaining these pipelines then falls to
-bioinformatician reducing their role from computational researchers to the
-custodians of gluing different tools together.
+A container is somewhat like a lightweight virtual machine but stripped down to
+only contain all the userland software layer. Although not a new concept, its
+recent realization in the Linux OS has boosted the technology for different
+applications and has enabled the Docker platform which allows the creation 
+of virtual containers in which developers can install their software along
+with all required libraries and scripts. The bioinformatics field has quickly
+recognised the opportunity provided by software containerisation. Docker allows
+containers to be shared via a central download site and used the same way as if
+the tool itself were installed. Most importantly, this approach doesn't dictate
+a specific software framework or language for implementing bioinformatics programs
+and integrates seamlessly with existing software while keeping the work for the
+creation of containers to a minimum. Thus, containerisation has the potential
+to solve the problems of software availability and installation outlined before,
+where bundling all dependencies removes the need for the user to compile and
+install anything (except Docker itself). Software containers also provide
+researchers with the option to reproduce existing published results to replicate
+or expand on the work of others. An example of this are the nucleotid.es and
+CAMI assembly benchmarking projects, where a containerised benchmarked tool is
+available for download by users.
 
 To this end we, developers involved in both CAMI and nucleotid.es, have created
 the bioboxes project [bioboxes.org] with the aim of specifying standardised
