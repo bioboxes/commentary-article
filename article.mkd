@@ -138,20 +138,20 @@ available for download by users.
 To this end we, developers involved in both CAMI and nucleotid.es, have created
 the bioboxes project [bioboxes.org] with the aim of specifying standardised
 bioinformatics containers. A biobox is a software container with a standardised
-interface, where this interface describes which input files and parameters are
-accepted, and which output files are returned. An example is a short-read
-assembler which takes an input paired-fastq file and returns a contig file.
-Each developer creating a biobox should make sure the Docker container accepts
-these inputs and returns the expected outputs.
+interface which describes what kind of input files and parameters are
+accepted, and which output files are to be returned. An example is a short-read
+assembler which takes an input paired-FASTQ file and returns a contigs FASTA file.
+Each developer creating a biobox should make sure the container accepts these
+inputs and returns the expected outputs.
 
-Specifying the same interface for bioinformatics performing the same task
-allows one to swapped for another in a bioinformatics pipeline. This creates an
+Specifying the same interface for containers performing the same task
+allows one to be swapped for another in a pipeline. This creates an
 interchangeable parts list for researchers which, combined with Docker
-containerisation, means biologists and bioinformaticians has access and can
+containerisation, means biologists and bioinformaticians have access and can
 immediately use a large body of bioinformatics software. Figure 1 contrasts the
 existing state of bioinformatics software with bioboxes standardised software
 containers. Figure 2 shows a command line interface to bioboxes which allows
-the reader to test using biobox containers.
+the reader to test using a biobox.
 
 We ask that developers try following the documentation on the bioboxes.org
 website and contribute biobox-compatible Docker images of their software. The
