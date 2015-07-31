@@ -184,7 +184,7 @@ creating documentation. MB wrote the manuscript.
 
 # Authors' information
 
-PB and JG are developers in CAMI, a project to benchmark bioinformatics tools
+PB and JD are developers in CAMI, a project to benchmark bioinformatics tools
 for metagenomics. MB created nucleotid.es a project to benchmark genome
 assembly software. Both of these projects use Docker containers to ensure
 benchmarking are reproducible.
