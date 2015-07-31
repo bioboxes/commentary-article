@@ -49,17 +49,15 @@ articles. This then follows that a bioinformatics software developer is
 measured by the same metric as a biologist studying novel protein mechanisms -
 the more articles the better. This has lead to proliferation of bioinformatics
 software - the Wikipedia page for sequence aligners alone lists 64 different
-implementations.
-
-Perverse incentives have lead to a fire-and-forget approach to software;
-publishing multiple software articles is rewarded while no metrics exist for
-maintaining existing software [chang2015]. The *status quo* serves authors by
+implementations. Perverse incentives have lead to a fire-and-forget approach to software;
+publishing multiple software articles is rewarded while no direct metrics exist
+for maintaining existing software [chang2015]. The *status quo* serves authors by
 allowing them to generate long publication lists, and serves publishers by
 generating revenue through article processing fees. The intended audience, the
 biologists trying to do research, are then left to wade through a corpus of
 buggy, inconsistent and confusing tools [stein2002]. This commentary addresses
-the three symptoms of this: a lack of software availability, difficulty
-installing software, and no standardised interface for common tasks.
+three prominent symptoms of this system: lack of software availability, difficulty
+installing software, and strongly divergent formats and interfaces for common tasks.
 
 ## Lack of software availability
 
