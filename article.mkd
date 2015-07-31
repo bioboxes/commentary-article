@@ -36,12 +36,13 @@ bioinformatics, software, Docker, standards, usability
 The increasing size of data in biology has demanded a corresponding increase in
 the reliance on software to automate tasks that have become impossible to do
 manually [Ouzounis2012]. Miniaturisation of DNA sequencers has allowed greater
-access to genomic data, and the era when only large facilities could obtain
-this has already passed. Biology in 2015 requires a researcher to be using a
-pipette one day, and running genome assembly software the next. As biology
+access to genomic data where also small facilities can afford to do large-scale
+genomic sequencing. Biology in 2015 requires a researcher to be using a
+pipette one day, and running genome assembly software the next. As the field
 changes to where scientists are expected to regularly use bioinformatics tools,
-the poor quality of software is becoming more and more of a hindrance to
-research.
+the difficulty to share academic software is becoming more and more of a hindrance
+not only to every-day research but also to the entire peer reviewing and publication
+process where decisions should base on reproducible results rather than trust.
 
 Bioinformatics software is seen as research output and published as journal
 articles. This then follows that a bioinformatics software developer is
