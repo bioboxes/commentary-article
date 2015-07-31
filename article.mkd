@@ -66,7 +66,8 @@ about software does not guarantee that the tool is actually available to
 download. Unless the journal specifically mandates the use of a third party
 service to host the software, the article may describe the tool as being
 "available on request" - the reader has to contact the author for access. If
-the author cannot be contacted then this software essentially ceases to exist.
+the author cannot (or doesn't want to) be contacted then this software essentially
+ceases to exist.
 
 Another common situation is that software is unavailable because the developer
 has moved on to a different position, or if the research funding supporting
