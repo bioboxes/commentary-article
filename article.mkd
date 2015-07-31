@@ -215,4 +215,3 @@ biobox run short_read_assembler bioboxes/velvet --input reads.fq.gz --output con
 biobox run short_read_assembler bioboxes/megahit --input reads.fq.gz --output contigs.fa
 
 ```
-
