@@ -79,21 +79,18 @@ was published. [klien2014]
 
 ## Difficulty installing software
 
-Differences between operating systems mean a tool written in a language such as
-C++ cannot not be distributed as a ready-to-use version, instead the source
-code must be first 'compiled' by the user for the operating system. The process
-of compilation converts this source code into usable binary which can then be
-run by the user. Compiling source code however is not a simple task due to the
-limited experience biologists may be expected to have with C++ build tools.
-
-This difficulty is compounded when a tool depends on other additional
-software written by third parties. Compiling the tool then first requires
-fetching compiling and installing all these dependent libraries first. The
-version of a software dependency is also crucial as an incorrect version can
-cause the compilation to fail. Software dependencies and versioning often leads
-to absurd situations where a biologist is expected to decipher obscure output
-such as GNU make reporting a g++ error because the wrong version of
-libboost-dev is installed.
+Differences between operating systems and hardware cause an additional effort
+in delivering software in a ready-to-use form. One example is when software is
+written in a high-level language such as C++ which must be 'compiled' to
+generate platform-specific binaries. Even if programs are written using
+'platform-independent' languages such as Java or Python, the consideration of all
+software dependencies means a huge investment of time to package or install the
+bioinformatics software - not speaking of the required expertise. As software
+delivery and maintenance makes no part in the revenues of publishing, the
+biologist is usually left with the work of compiling the source code, manually
+installing required software libraries and debugging platform-incompatible code,
+for instance to to decipher obscure output such as GNU make reporting a g++ error
+because the wrong version of libboost-dev is installed.
 
 ## Lack of standards
 
