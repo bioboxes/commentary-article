@@ -165,12 +165,12 @@ both accepted and driven by the bioinformatics community itself.
 
 # Conclusion
 
-Without serious changes bioinformatics software will continue to work against
-the users it is written for, consuming time and effort. The use of software
-containers with standardised interfaces has the potential to make the work of
-biologists easier by making it simpler to access a great variety of software,
-and also developers easier by making their software available and usable to a
-greater audience.
+The way bioinformatics software is currently delivered works against the users,
+consuming time and effort, and against reproducible science. The use of software
+containers with standardised interfaces provides the glue to satisfy both biologists,
+by making it simpler to access a great variety of software, and software developers,
+by keeping their ways of developing unchanged and at the same time making their
+software available and usable to a greater audience.
 
 # Competing interests
 
