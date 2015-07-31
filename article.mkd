@@ -8,8 +8,8 @@ software
   1) Universität Bielefeld, Technische Fakultät, AG Praktische Informatik,
   D-33594 Bielefeld, Germany
 
-  2) Max-Planck-Institut für Informatik, Computational Genomics and
-  Epidemiology, Campus E1 4, 66123 Saarbrücken, Germany
+  2) Helmholtz Centre for Infection Research, Computational Biology of Infection
+  Research, 38124 Braunschweig, Germany
 
   3) DOE Joint Genome Institute, 2800 Mitchell Drive, Walnut Creek, CA 94598,
   USA
