@@ -118,7 +118,7 @@ users the software is written for \- biologists and bioinformaticians.
 A container is somewhat like a lightweight virtual machine but stripped down to
 only contain all the userland software layer. Although not a new concept, its
 recent realization in the Linux OS has boosted the technology for different
-applications and has enabled the Docker platform which allows the creation 
+applications and has enabled the Docker platform [www.docker.com] which allows the creation 
 of virtual containers in which developers can install their software along
 with all required libraries and scripts. The bioinformatics field has quickly
 recognised the opportunity provided by software containerisation. Docker allows
