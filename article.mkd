@@ -211,7 +211,7 @@ Example of bioboxes command line interface.
 
 pip install --user biobox_cli
 
-biobox short_read_assembler bioboxes/velvet --input reads.fq.gz --output contigs.fa
-biobox short_read_assembler bioboxes/megahit --input reads.fq.gz --output contigs.fa
+biobox run short_read_assembler bioboxes/velvet --input reads.fq.gz --output contigs.fa
+biobox run short_read_assembler bioboxes/megahit --input reads.fq.gz --output contigs.fa
 
 ```
