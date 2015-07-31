@@ -21,7 +21,7 @@ software
 # Abstract
 
 Software is now both central and essential to modern biology. Yet lack of
-availability, difficult installations, and poor user interfaces make software
+availability, difficult installations, and complex user interfaces make software
 hard to obtain and use. Containerisation, as exemplified by Docker, has the
 potential to solve the problems associated with sharing software. Bioboxes are
 standardised bioinformatics containers around common interfaces. This has the
