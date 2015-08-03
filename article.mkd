@@ -3,10 +3,9 @@
 *Title*: Bioboxes - standardised containers for interchangeable bioinformatics
 software
 
-*Authors*: Peter Belmann (1), Johannes Dröge (2), Michael Barton \* (3)
+*Authors*: Peter Belmann (1), Johannes Dröge (2), Michael Barton \* (3), Andreas Bremges (1,2), Alexander Sczyrba (1) 
 
-  1) Universität Bielefeld, Technische Fakultät, AG Praktische Informatik,
-  D-33594 Bielefeld, Germany
+  1) Faculty of Technology and Center for Biotechnology, Bielefeld University, Universitätsstraße 25, 33615 Bielefeld, Germany
 
   2) Helmholtz Centre for Infection Research, Computational Biology of Infection Research, 38124 Braunschweig, Germany
 
@@ -187,8 +186,8 @@ creating documentation. MB wrote the manuscript.
 
 # Authors' information
 
-PB and JG are developers in CAMI, a project to benchmark bioinformatics tools
-for metagenomics. MB created nucleotid.es a project to benchmark genome
+PB and JD are developers in CAMI, a project to benchmark bioinformatics tools
+for metagenomics. AS and AB are CAMI organizers which supervised PB`s master thesis on bioboxes and discussed regularly the state of bioboxes. MB created nucleotid.es a project to benchmark genome
 assembly software. Both of these projects use Docker containers to ensure
 benchmarking are reproducible.
 
