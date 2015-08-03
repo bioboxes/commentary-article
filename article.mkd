@@ -3,14 +3,13 @@
 *Title*: Bioboxes - standardised containers for interchangeable bioinformatics
 software
 
-*Authors*: Peter Belmann (1), Johannes Dröge (2), Michael Barton \* (3), Andreas Bremges (1,2), Alexander Sczyrba (1) 
+*Authors*: Peter Belmann (1), Johannes Dröge (2), Andreas Bremges (1,2), Alice C. McHardy (2), Alexander Sczyrba (1), Michael Barton \* (3) 
 
-  1) Faculty of Technology and Center for Biotechnology, Bielefeld University, Universitätsstraße 25, 33615 Bielefeld, Germany
+  1) Faculty of Technology and Center for Biotechnology, Bielefeld University, 33615 Bielefeld, Germany
 
-  2) Helmholtz Centre for Infection Research, Computational Biology of Infection Research, 38124 Braunschweig, Germany
+  2) Computational Biology of Infection Research, Helmholtz Centre for Infection Research, 38124 Braunschweig, Germany
 
-  3) DOE Joint Genome Institute, 2800 Mitchell Drive, Walnut Creek, CA 94598,
-  USA
+  3) DOE Joint Genome Institute, Walnut Creek, CA 94598, USA
 
   \* Corresponding author: mail@michaelbarton.me.uk
 
@@ -127,9 +126,9 @@ availability and installation outlined here, where bundling all dependencies
 removes the need for the user to compile and install anything except Docker
 itself. Software containers also provide researchers with the option to
 reproduce existing published results to replicate or expand on the work of
-others. An example of this are the nucleotid.es and CAMI assembly benchmarking
-projects, where a containerised benchmarked tool is available for download by
-users.
+others. An example of this are the nucleotid.es assembly benchmarking project and
+the Critical Assessment of Metagenomic Interpretation (CAMI) initiative, where
+a containerised benchmarked tool is available for download by users.
 
 Even with these outlined advantages, without standardisation bioinformatics
 will continue to suffer from mismatching interfaces between tools in software
@@ -181,19 +180,23 @@ research at DockerCon Europe.
 
 # Authors' contributions
 
-PB, JD and MB conceived and created bioboxes, implementing all code and
-creating documentation. MB wrote the manuscript.
+PB, JD, AB, ACM, AS and MB jointly conceived the idea of bioboxes.
+PB, JD and MB created bioboxes, implementing all code and creating documentation.
+AB and AS supervized PB's master thesis on bioboxes, directing the project and actively engaging in discussions. 
+MB wrote the manuscript.
+PB, JD, AB and AS revised the manuscript.
+All authors read and approved the final manuscript.
 
 # Authors' information
 
-PB and JD are developers in CAMI, a project to benchmark bioinformatics tools
-for metagenomics. AS and AB are CAMI organizers which supervised PB`s master thesis on bioboxes and discussed regularly the state of bioboxes. MB created nucleotid.es a project to benchmark genome
-assembly software. Both of these projects use Docker containers to ensure
-benchmarking are reproducible.
+PB, JD and AB are developers in the [Critical Assessment of Metagenomic Interpretation (CAMI)](http://cami-challenge.org/), an initiative to benchmark bioinformatics tools for metagenomics.
+ACM and AS are CAMI organizers.
+MB created [nucleotid.es](http://nucleotid.es), a project to benchmark genome assembly software.
+Both of these projects use Docker containers to ensure benchmarking are reproducible.
 
 # Acknowledgements
 
-The authors with to thank Rutger Vos, Scott Edmunds, Andreas Bremges, Yasset
+The authors with to thank Rutger Vos, Scott Edmunds, Yasset
 Perez-Riverol, and Felipe Leprevost for proof reading the article. The authors
 also wish to thank all members of the bioinformatics community who have
 provided feedback through comments, issues and the bioboxes chatroom.
