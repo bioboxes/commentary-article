@@ -35,13 +35,13 @@ bioinformatics, software, Docker, standards, usability
 
 The increasing size of data in biology has demanded a corresponding increase in
 the reliance on software to automate tasks that have become impossible to do
-manually [Ouzounis2012]. Improvements in technology have allowed greater
-ability to create large biological data sets, where now small facilities can
-feasibly do large-scale genomic sequencing or proteomics. Biology in 2015 may
-require a researcher to be using a pipette one day, and running genome assembly
-software the next. As the field changes to where scientists are expected to
-regularly use bioinformatics tools, the difficulty to share academic software
-is becoming a hindrance to both research and publication.
+manually [1]. Improvements in technology have allowed greater ability to create
+large biological data sets, where now small facilities can feasibly do
+large-scale genomic sequencing or proteomics. Biology in 2015 may require a
+researcher to be using a pipette one day, and running genome assembly software
+the next. As the field changes to where scientists are expected to regularly
+use bioinformatics tools, the difficulty to share academic software is becoming
+a hindrance to both research and publication.
 
 Bioinformatics software is seen as research output and published as journal
 articles. This then follows that a bioinformatics software developer is
@@ -52,14 +52,13 @@ implementations.
 
 Perverse incentives have lead to a fire-and-forget approach to software;
 publishing multiple software articles is rewarded while no direct metrics exist
-for maintaining existing software [chang2015]. The *status quo* serves authors
-by allowing them to generate long publication lists, and serves publishers by
+for maintaining existing software [2]. The *status quo* serves authors by
+allowing them to generate long publication lists, and serves publishers by
 generating revenue through article processing fees. The intended audience, the
 biologists trying to do research, are then left to wade through a corpus of
-buggy, inconsistent and confusing tools [stein2002]. This commentary addresses
-three prominent symptoms of this system: lack of software availability,
-difficulty installing software, and divergent formats and interfaces for common
-tasks.
+buggy, inconsistent and confusing tools [3]. This commentary addresses three
+prominent symptoms of this system: lack of software availability, difficulty
+installing software, and divergent formats and interfaces for common tasks.
 
 ## Lack of software availability
 
@@ -77,7 +76,7 @@ their position ends. This results in the developer no longer being able to
 maintain the software, the website describing the tool no longer existing, or
 both. A study related to this effect showed that, in many cases, bioinformatics
 web addresses are often not available 2-3 years after the article describing it
-was published. [klien2014]
+was published [4].
 
 ## Difficulty installing software
 
@@ -121,23 +120,23 @@ biologists and bioinformaticians.
 
 ## Software containerisation and standardisation
 
-The Docker platform [www.docker.com] allows the creation of lightweight
-containers in which developers can install their software along with all
-required libraries and scripts. These containers can then be easily shared
-through a central repository, or as compressed files, and used in the same
-way as if the software itself were installed. The bioinformatics field has
-quickly recognised the opportunity provided by Docker where containers don't
-dictate a specific software framework or language for implementing
-bioinformatics tools, and allows integration with existing software.
+The Docker platform [5] allows the creation of lightweight containers in which
+developers can install their software along with all required libraries and
+scripts. These containers can then be easily shared through a central
+repository, or as compressed files, and used in the same way as if the software
+itself were installed. The bioinformatics field has quickly recognised the
+opportunity provided by Docker [x,y] where containers don't dictate a specific
+software framework or language for implementing bioinformatics tools, and
+allows integration with existing software.
 
 Containerisation further has the potential to solve the problems of software
 availability and installation outlined before, where bundling all dependencies
 removes the need for the user to compile and install anything (except Docker
 itself). Software containers also provide researchers with the option to
 reproduce existing published results to replicate or expand on the work of
-others. An example of this are the [nucleotid.es] and Critical Assessment of
-Metagenomic Interpretation (CAMI) [www.cami-challenge.org] projects,
-where the tools benchmarked are containerised and available for download by users.
+others. An example of this are the [8] and Critical Assessment of Metagenomic
+Interpretation (CAMI) [9] projects, where the tools benchmarked are
+containerised and available for download by users.
 
 Even with these outlined advantages, without standardisation bioinformatics
 will continue to suffer from mismatching interfaces between tools in software
@@ -146,7 +145,7 @@ bioinformatician reducing their role from computational researchers to the
 custodians of gluing different tools together.
 
 To this end we, developers involved in both CAMI and nucleotid.es, have created
-the bioboxes project [bioboxes.org] with the aim of specifying standardised
+the bioboxes project [10] with the aim of specifying standardised
 bioinformatics containers. A biobox is a software container with a standardised
 interface which describes what kind of input files and parameters are accepted,
 and which output files are to be returned. An example is a short-read assembler
@@ -197,10 +196,10 @@ revised the manuscript. All authors read and approved the final manuscript.
 
 # Authors' information
 
-PB, JD and AB are developers in the CAMI initiative to benchmark bioinformatics tools
-for metagenomics. ACM and AS are CAMI organisers. MB created [nucleotid.es], a
-project to benchmark genome assembly software. Both of these projects use
-Docker containers to ensure benchmarking are reproducible.
+PB, JD and AB are developers in the CAMI initiative to benchmark bioinformatics
+tools for metagenomics. ACM and AS are CAMI organisers. MB created
+nucleotid.es, a project to benchmark genome assembly software. Both of these
+projects use Docker containers to ensure benchmarking are reproducible.
 
 # Acknowledgements
 
@@ -229,3 +228,35 @@ biobox run short_read_assembler bioboxes/velvet --input reads.fq.gz --output con
 biobox run short_read_assembler bioboxes/megahit --input reads.fq.gz --output contigs.fa
 
 ```
+
+# References
+
+1) Rise and Demise of Bioinformatics? Promise and Progress. Christos A.
+Ouzounis, PLoS Comput Biol, Vol. 8, No. 4. (26 April 2012), e1002487
+
+2) Core services: Reward bioinformaticians. Jeffrey Chang, Nature, Vol. 520,
+No. 7546. (9 April 2015), pp. 151-152
+
+3) Creating a bioinformatics nation. Lincoln Stein, Nature, Vol. 417, No.
+6885. (09 May 2002), pp. 119-120, doi:10.1038/417119a
+
+4) Scholarly context not found: one in five articles suffers from reference
+rot. Martin Klein, Herbert Van de Sompel, Robert Sanderson, Harihar Shankar,
+Lyudmila Balakireva, Ke Zhou, Richard Tobin, PloS One, Vol. 9, No. 12. (2014)
+
+5) https://www.docker.com/
+
+6) An introduction to Docker for reproducible research, with examples from the
+R environment. Carl Boettiger, ACM SIGOPS Operating Systems Review, Vol. 49,
+No. 1. (2 Oct 2014), pp. 71-79, doi:10.1145/2723872.2723882
+
+7) The impact of Docker containers on the performance of genomic pipelines.
+Paolo Di Tommaso, Emilio Palumbo, Maria Chatzou, Pablo Prieto, Michael L.
+Heuer, Cedric Notredame PeerJ PrePrints (12 June 2015),
+doi:10.7287/peerj.preprints.1171v2 
+
+8) http://nucleotid.es
+
+9) http://www.cami-challenge.org
+
+10) http://bioboxes.org
