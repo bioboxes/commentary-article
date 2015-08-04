@@ -136,7 +136,7 @@ removes the need for the user to compile and install anything (except Docker
 itself). Software containers also provide researchers with the option to
 reproduce existing published results to replicate or expand on the work of
 others. An example of this are the [nucleotid.es] and Critical Assessment of
-Metagenomic Interpretation (CAMI) benchmarking projects [www.cami-challenge.org],
+Metagenomic Interpretation (CAMI) [www.cami-challenge.org] projects,
 where the tools benchmarked are containerised and available for download by users.
 
 Even with these outlined advantages, without standardisation bioinformatics
