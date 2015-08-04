@@ -81,12 +81,12 @@ was published. [klien2014]
 
 ## Difficulty installing software
 
-Differences between operating systems and hardware cause require effort in
+Differences between operating systems and hardware require effort in
 delivering software in a ready-to-use form. One example is when software is
 written in a language such as C/C++ which must be 'compiled' to generate
 platform-specific binaries. Compiling however is not a simple task, and even
 harder in biology due to the limited experience biologists may be expected to
-have with C++ build tools. Alternatively even if tools are written using
+have with C++ build tools. Alternatively, even if tools are written using
 'platform-independent' languages such as Java or Python, these often require
 third-party dependencies which also must be downloaded and installed, requiring
 additional time and effort.
