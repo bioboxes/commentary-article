@@ -121,7 +121,7 @@ biologists and bioinformaticians.
 
 ## Software containerisation and standardisation
 
-The Docker platform [www.docker.com] allows the creation of lightweight virtual
+The Docker platform [www.docker.com] allows the creation of lightweight
 containers in which developers can install their software along with all
 required libraries and scripts. These containers can then be easily shared
 through a central repository, or as compressed files, and then used in the same
