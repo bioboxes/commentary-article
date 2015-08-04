@@ -94,7 +94,7 @@ additional time and effort.
 As software delivery and maintenance plays no part in the publication process,
 the biologist is usually left with the work of compiling source code, manually
 installing required software libraries and debugging platform-incompatible
-code. for instance to to decipher obscure output such as GNU make reporting a
+code: for instance to to decipher obscure output such as GNU make reporting a
 g++ error because the wrong version of libboost-dev is installed.
 
 ## Lack of standards
