@@ -81,20 +81,20 @@ was published. [klien2014]
 
 ## Difficulty installing software
 
-Differences between operating systems and hardware cause require effort in
+Differences between operating systems and hardware require effort in
 delivering software in a ready-to-use form. One example is when software is
 written in a language such as C/C++ which must be 'compiled' to generate
 platform-specific binaries. Compiling however is not a simple task, and even
 harder in biology due to the limited experience biologists may be expected to
-have with C++ build tools. Alternatively even if tools are written using
-'platform-independent' languages such as Java or Python, these often require
+have with C++ build tools. Alternatively, even if tools are written using
+'platform-independent' languages such as Java or Python, these often have
 third-party dependencies which also must be downloaded and installed, requiring
 additional time and effort.
 
 As software delivery and maintenance plays no part in the publication process,
 the biologist is usually left with the work of compiling source code, manually
 installing required software libraries and debugging platform-incompatible
-code. for instance to to decipher obscure output such as GNU make reporting a
+code: for instance to to decipher obscure output such as GNU make reporting a
 g++ error because the wrong version of libboost-dev is installed.
 
 ## Lack of standards
@@ -121,7 +121,7 @@ biologists and bioinformaticians.
 
 ## Software containerisation and standardisation
 
-The Docker platform [www.docker.com] allows the creation of lightweight virtual
+The Docker platform [www.docker.com] allows the creation of lightweight
 containers in which developers can install their software along with all
 required libraries and scripts. These containers can then be easily shared
 through a central repository, or as compressed files, and then used in the same
@@ -135,9 +135,9 @@ availability and installation outlined before, where bundling all dependencies
 removes the need for the user to compile and install anything (except Docker
 itself). Software containers also provide researchers with the option to
 reproduce existing published results to replicate or expand on the work of
-others. An example of this are the nucleotid.es and CAMI assembly benchmarking
-projects, where the tools benchmarked are containerised and available for
-download by users.
+others. An example of this are the [nucleotid.es] and Critical Assessment of
+Metagenomic Interpretation (CAMI) [www.cami-challenge.org] projects,
+where the tools benchmarked are containerised and available for download by users.
 
 Even with these outlined advantages, without standardisation bioinformatics
 will continue to suffer from mismatching interfaces between tools in software
@@ -179,8 +179,8 @@ The current state of bioinformatics software works against the users by
 consuming time and effort, and against reproducibility by lacking methods to
 recreate the work of others. The use of software containers with standardised
 interfaces has the potential make the work of biologists easier by creating
-simple to use, fungible tools. At the same time developers can make their more
-easily available and usable by a wider audience.
+simple to use, fungible tools. At the same time developers can make their programs
+more easily available and usable by a wider audience.
 
 # Competing interests
 
@@ -197,8 +197,7 @@ revised the manuscript. All authors read and approved the final manuscript.
 
 # Authors' information
 
-PB, JD and AB are developers in the Critical Assessment of Metagenomic
-Interpretation (CAMI) [cami], an initiative to benchmark bioinformatics tools
+PB, JD and AB are developers in the CAMI initiative to benchmark bioinformatics tools
 for metagenomics. ACM and AS are CAMI organisers. MB created [nucleotid.es], a
 project to benchmark genome assembly software. Both of these projects use
 Docker containers to ensure benchmarking are reproducible.
