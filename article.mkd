@@ -87,7 +87,7 @@ written in a language such as C/C++ which must be 'compiled' to generate
 platform-specific binaries. Compiling however is not a simple task, and even
 harder in biology due to the limited experience biologists may be expected to
 have with C++ build tools. Alternatively, even if tools are written using
-'platform-independent' languages such as Java or Python, these often require
+'platform-independent' languages such as Java or Python, these often have
 third-party dependencies which also must be downloaded and installed, requiring
 additional time and effort.
 
