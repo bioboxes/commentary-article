@@ -94,8 +94,8 @@ additional time and effort.
 As software delivery and maintenance plays no part in the publication process,
 the biologist is usually left with the work of compiling source code, manually
 installing required software libraries and debugging platform-incompatible
-code. for instance to to decipher obscure output such as GNU make reporting a
-g++ error because the wrong version of libboost-dev is installed.
+code (for instance to decipher obscure output such as GNU make reporting a
+g++ error because the wrong version of libboost-dev is installed).
 
 ## Lack of standards
 
@@ -116,7 +116,7 @@ aligners, which all do the same task, should not be standardised with the same
 interface? How about genome assemblers, FASTQ preprocessors or multiple
 sequence aligners? The tools for each of these tasks essentially perform the
 same operation, but each has a different interface. Again, the current
-situation does not serve intended users the software is written for \-
+situation does not serve intended users the software is written for:
 biologists and bioinformaticians.
 
 ## Software containerisation and standardisation
@@ -124,7 +124,7 @@ biologists and bioinformaticians.
 The Docker platform [www.docker.com] allows the creation of lightweight virtual
 containers in which developers can install their software along with all
 required libraries and scripts. These containers can then be easily shared
-through a central repository, or as compressed files, and then used in the same
+through a central repository, or as compressed files, and used in the same
 way as if the software itself were installed. The bioinformatics field has
 quickly recognised the opportunity provided by Docker where containers don't
 dictate a specific software framework or language for implementing
@@ -168,7 +168,7 @@ website and contribute biobox-compatible Docker images of their software. Then,
 biologists and bioinformaticians, editors and reviewers, should begin
 requesting that biobox versions of software are available alongside
 publications. At the same time the bioboxes project welcomes feedback from the
-community and the website contains links on how to get involved through filing
+community. The website contains links on how to get involved through filing
 bug reports or asking questions in the chat room. Ultimately standardisation
 and the ensuing benefits will only be successful if they are both accepted and
 driven by the bioinformatics community itself.
@@ -179,8 +179,8 @@ The current state of bioinformatics software works against the users by
 consuming time and effort, and against reproducibility by lacking methods to
 recreate the work of others. The use of software containers with standardised
 interfaces has the potential make the work of biologists easier by creating
-simple to use, fungible tools. At the same time developers can make their more
-easily available and usable by a wider audience.
+simple to use, fungible tools. At the same time developers can make their
+software more easily available and usable by a wider audience.
 
 # Competing interests
 
@@ -205,10 +205,11 @@ Docker containers to ensure benchmarking are reproducible.
 
 # Acknowledgements
 
-The authors with to thank Rutger Vos, Scott Edmunds, Yasset Perez-Riverol, and
+The authors wish to thank Rutger Vos, Scott Edmunds, Yasset Perez-Riverol, and
 Felipe Leprevost for proof reading the article. The authors also wish to thank
 all members of the bioinformatics community who have provided feedback through
-comments, issues and the bioboxes chatroom.
+comments, issues and the bioboxes chatroom, in particular Keith Bradnam for
+suggesting the project's name.
 
 # Figure legends
 
