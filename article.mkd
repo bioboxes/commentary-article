@@ -81,20 +81,20 @@ was published. [klien2014]
 
 ## Difficulty installing software
 
-Differences between operating systems and hardware cause require effort in
+Differences between operating systems and hardware require effort in
 delivering software in a ready-to-use form. One example is when software is
 written in a language such as C/C++ which must be 'compiled' to generate
 platform-specific binaries. Compiling however is not a simple task, and even
 harder in biology due to the limited experience biologists may be expected to
-have with C++ build tools. Alternatively even if tools are written using
-'platform-independent' languages such as Java or Python, these often require
+have with C++ build tools. Alternatively, even if tools are written using
+'platform-independent' languages such as Java or Python, these often have
 third-party dependencies which also must be downloaded and installed, requiring
 additional time and effort.
 
 As software delivery and maintenance plays no part in the publication process,
 the biologist is usually left with the work of compiling source code, manually
 installing required software libraries and debugging platform-incompatible
-code. for instance to to decipher obscure output such as GNU make reporting a
+code: for instance to to decipher obscure output such as GNU make reporting a
 g++ error because the wrong version of libboost-dev is installed.
 
 ## Lack of standards
@@ -116,15 +116,15 @@ aligners, which all do the same task, should not be standardised with the same
 interface? How about genome assemblers, FASTQ preprocessors or multiple
 sequence aligners? The tools for each of these tasks essentially perform the
 same operation, but each has a different interface. Again, the current
-situation does not serve intended users the software is written for \-
+situation does not serve intended users the software is written for:
 biologists and bioinformaticians.
 
 ## Software containerisation and standardisation
 
-The Docker platform [www.docker.com] allows the creation of lightweight virtual
+The Docker platform [www.docker.com] allows the creation of lightweight
 containers in which developers can install their software along with all
 required libraries and scripts. These containers can then be easily shared
-through a central repository, or as compressed files, and then used in the same
+through a central repository, or as compressed files, and used in the same
 way as if the software itself were installed. The bioinformatics field has
 quickly recognised the opportunity provided by Docker where containers don't
 dictate a specific software framework or language for implementing
@@ -135,9 +135,9 @@ availability and installation outlined before, where bundling all dependencies
 removes the need for the user to compile and install anything (except Docker
 itself). Software containers also provide researchers with the option to
 reproduce existing published results to replicate or expand on the work of
-others. An example of this are the nucleotid.es and CAMI assembly benchmarking
-projects, where the tools benchmarked are containerised and available for
-download by users.
+others. An example of this are the [nucleotid.es] and Critical Assessment of
+Metagenomic Interpretation (CAMI) [www.cami-challenge.org] projects,
+where the tools benchmarked are containerised and available for download by users.
 
 Even with these outlined advantages, without standardisation bioinformatics
 will continue to suffer from mismatching interfaces between tools in software
@@ -168,7 +168,7 @@ website and contribute biobox-compatible Docker images of their software. Then,
 biologists and bioinformaticians, editors and reviewers, should begin
 requesting that biobox versions of software are available alongside
 publications. At the same time the bioboxes project welcomes feedback from the
-community and the website contains links on how to get involved through filing
+community. The website contains links on how to get involved through filing
 bug reports or asking questions in the chat room. Ultimately standardisation
 and the ensuing benefits will only be successful if they are both accepted and
 driven by the bioinformatics community itself.
@@ -179,8 +179,8 @@ The current state of bioinformatics software works against the users by
 consuming time and effort, and against reproducibility by lacking methods to
 recreate the work of others. The use of software containers with standardised
 interfaces has the potential make the work of biologists easier by creating
-simple to use, fungible tools. At the same time developers can make their more
-easily available and usable by a wider audience.
+simple to use, fungible tools. At the same time developers can make their
+programs more easily available and usable by a wider audience.
 
 # Competing interests
 
@@ -197,18 +197,18 @@ revised the manuscript. All authors read and approved the final manuscript.
 
 # Authors' information
 
-PB, JD and AB are developers in the Critical Assessment of Metagenomic
-Interpretation (CAMI) [cami], an initiative to benchmark bioinformatics tools
+PB, JD and AB are developers in the CAMI initiative to benchmark bioinformatics tools
 for metagenomics. ACM and AS are CAMI organisers. MB created [nucleotid.es], a
 project to benchmark genome assembly software. Both of these projects use
 Docker containers to ensure benchmarking are reproducible.
 
 # Acknowledgements
 
-The authors with to thank Rutger Vos, Scott Edmunds, Yasset Perez-Riverol, and
+The authors wish to thank Rutger Vos, Scott Edmunds, Yasset Perez-Riverol, and
 Felipe Leprevost for proof reading the article. The authors also wish to thank
 all members of the bioinformatics community who have provided feedback through
-comments, issues and the bioboxes chatroom.
+comments, issues and the bioboxes chatroom, in particular Keith Bradnam for
+suggesting the project's name.
 
 # Figure legends
 
