@@ -6,7 +6,7 @@ software
 *Authors*: Peter Belmann (1), Johannes Dröge (2), Andreas Bremges (1,2), Alice
 C. McHardy (2), Alexander Sczyrba (1), Michael Barton \* (3) 
 
-  1) Faculty of Technology and Centre for Biotechnology, Bielefeld University,
+  1) Faculty of Technology and Center for Biotechnology, Bielefeld University,
   33615 Bielefeld, Germany
 
   2) Computational Biology of Infection Research, Helmholtz Centre for
