@@ -179,8 +179,8 @@ The current state of bioinformatics software works against the users by
 consuming time and effort, and against reproducibility by lacking methods to
 recreate the work of others. The use of software containers with standardised
 interfaces has the potential make the work of biologists easier by creating
-simple to use, fungible tools. At the same time developers can make their more
-easily available and usable by a wider audience.
+simple to use, fungible tools. At the same time developers can make their programs
+more easily available and usable by a wider audience.
 
 # Competing interests
 
