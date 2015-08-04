@@ -125,7 +125,7 @@ developers can install their software along with all required libraries and
 scripts. These containers can then be easily shared through a central
 repository, or as compressed files, and used in the same way as if the software
 itself were installed. The bioinformatics field has quickly recognised the
-opportunity provided by Docker [x,y] where containers don't dictate a specific
+opportunity provided by Docker [6,7] where containers don't dictate a specific
 software framework or language for implementing bioinformatics tools, and
 allows integration with existing software.
 
