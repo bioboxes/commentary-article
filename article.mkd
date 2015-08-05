@@ -120,12 +120,12 @@ biologists and bioinformaticians.
 
 ## Software containerisation and standardisation
 
-The Docker platform allows the creation of lightweight containers in which
+The Docker platform [5] allows the creation of lightweight containers in which
 developers can install their software along with all required libraries and
 scripts. These containers can then be easily shared through a central
 repository, or as compressed files, and used in the same way as if the software
 itself were installed. The bioinformatics field has quickly recognised the
-opportunity provided by Docker [5,6,7] where containers don't dictate a specific
+opportunity provided by Docker [6,7,8] where containers don't dictate a specific
 software framework or language for implementing bioinformatics tools, and
 allows integration with existing software.
 
@@ -134,8 +134,8 @@ availability and installation outlined above, where bundling all dependencies
 removes the need for the user to compile and install anything (except Docker
 itself). Software containers also provide researchers with the option to
 reproduce existing published results to replicate or expand on the work of
-others. An example of this are nucleotid.es [8] and the Critical Assessment of
-Metagenomic Interpretation (CAMI) [9] projects, where the tools benchmarked are
+others. An example of this are nucleotid.es [9] and the Critical Assessment of
+Metagenomic Interpretation (CAMI) [10] projects, where the tools benchmarked are
 containerised and available for download by users.
 
 Even with these outlined advantages, without standardisation bioinformatics
@@ -145,7 +145,7 @@ bioinformatician reducing their role from computational researchers to the
 custodians of gluing different tools together.
 
 To this end we, developers involved in both CAMI and nucleotid.es, have created
-the bioboxes project [10] with the aim of specifying standardised
+the bioboxes project [11] with the aim of specifying standardised
 bioinformatics containers. A biobox is a software container with a standardised
 interface which describes what kind of input files and parameters are accepted,
 and which output files are to be returned. An example is a short-read assembler
@@ -246,23 +246,25 @@ rot. Martin Klein, Herbert Van de Sompel, Robert Sanderson, Harihar Shankar,
 Lyudmila Balakireva, Ke Zhou, Richard Tobin, PloS One, Vol. 9, No. 12. (26
 December 2014), doi:10.1371/journal.pone.0115253
 
-5) An introduction to Docker for reproducible research, with examples from the
+5) https://www.docker.com/
+
+6) An introduction to Docker for reproducible research, with examples from the
 R environment. Carl Boettiger, ACM SIGOPS Operating Systems Review, Vol. 49,
 No. 1. (2 Oct 2014), pp. 71-79, doi:10.1145/2723872.2723882
 
-6) The impact of Docker containers on the performance of genomic pipelines.
+7) The impact of Docker containers on the performance of genomic pipelines.
 Paolo Di Tommaso, Emilio Palumbo, Maria Chatzou, Pablo Prieto, Michael L.
 Heuer, Cedric Notredame, PeerJ PrePrints (12 June 2015),
 doi:10.7287/peerj.preprints.1171v2 
 
-7) Deeply sequenced metagenome and metatranscriptome of a biogas-producing
+8) Deeply sequenced metagenome and metatranscriptome of a biogas-producing
 microbial community from an agricultural production-scale biogas plant. Andreas
 Bremges, Irena Maus, Peter Belmann, Felix Eikmeyer, Anika Winkler, Andreas
 Albersmeier, Alfred Pühler, Andreas Schlüter, Alexander Sczyrba, GigaScience,
 Vol. 4, No. 33. (30 July 2015), doi:10.1186/s13742-015-0073-6
 
-8) http://nucleotid.es
+9) http://nucleotid.es
 
-9) http://www.cami-challenge.org
+10) http://www.cami-challenge.org
 
-10) http://bioboxes.org
+11) http://bioboxes.org
