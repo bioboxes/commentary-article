@@ -120,12 +120,12 @@ biologists and bioinformaticians.
 
 ## Software containerisation and standardisation
 
-The Docker platform [5] allows the creation of lightweight containers in which
+The Docker platform allows the creation of lightweight containers in which
 developers can install their software along with all required libraries and
 scripts. These containers can then be easily shared through a central
 repository, or as compressed files, and used in the same way as if the software
 itself were installed. The bioinformatics field has quickly recognised the
-opportunity provided by Docker [6,7] where containers don't dictate a specific
+opportunity provided by Docker [5,6,7] where containers don't dictate a specific
 software framework or language for implementing bioinformatics tools, and
 allows integration with existing software.
 
@@ -232,28 +232,34 @@ biobox run short_read_assembler bioboxes/megahit --input reads.fq.gz --output co
 # References
 
 1) Rise and Demise of Bioinformatics? Promise and Progress. Christos A.
-Ouzounis, PLoS Comput Biol, Vol. 8, No. 4. (26 April 2012), e1002487
+Ouzounis, PLoS Comput Biol, Vol. 8, No. 4. (26 April 2012), e1002487,
+doi:10.1371/journal.pcbi.1002487
 
 2) Core services: Reward bioinformaticians. Jeffrey Chang, Nature, Vol. 520,
-No. 7546. (9 April 2015), pp. 151-152
+No. 7546. (9 April 2015), pp. 151-152, doi:10.1038/520151a
 
 3) Creating a bioinformatics nation. Lincoln Stein, Nature, Vol. 417, No.
 6885. (09 May 2002), pp. 119-120, doi:10.1038/417119a
 
 4) Scholarly context not found: one in five articles suffers from reference
 rot. Martin Klein, Herbert Van de Sompel, Robert Sanderson, Harihar Shankar,
-Lyudmila Balakireva, Ke Zhou, Richard Tobin, PloS One, Vol. 9, No. 12. (2014)
+Lyudmila Balakireva, Ke Zhou, Richard Tobin, PloS One, Vol. 9, No. 12. (26
+December 2014), doi:10.1371/journal.pone.0115253
 
-5) https://www.docker.com/
-
-6) An introduction to Docker for reproducible research, with examples from the
+5) An introduction to Docker for reproducible research, with examples from the
 R environment. Carl Boettiger, ACM SIGOPS Operating Systems Review, Vol. 49,
 No. 1. (2 Oct 2014), pp. 71-79, doi:10.1145/2723872.2723882
 
-7) The impact of Docker containers on the performance of genomic pipelines.
+6) The impact of Docker containers on the performance of genomic pipelines.
 Paolo Di Tommaso, Emilio Palumbo, Maria Chatzou, Pablo Prieto, Michael L.
-Heuer, Cedric Notredame PeerJ PrePrints (12 June 2015),
+Heuer, Cedric Notredame, PeerJ PrePrints (12 June 2015),
 doi:10.7287/peerj.preprints.1171v2 
+
+7) Deeply sequenced metagenome and metatranscriptome of a biogas-producing
+microbial community from an agricultural production-scale biogas plant. Andreas
+Bremges, Irena Maus, Peter Belmann, Felix Eikmeyer, Anika Winkler, Andreas
+Albersmeier, Alfred Pühler, Andreas Schlüter, Alexander Sczyrba, GigaScience,
+Vol. 4, No. 33. (30 July 2015), doi:10.1186/s13742-015-0073-6
 
 8) http://nucleotid.es
 
