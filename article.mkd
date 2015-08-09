@@ -183,21 +183,21 @@ they are both accepted and driven by the bioinformatics community itself.
 
 # Competing interests
 
-Docker Inc paid for MB's flight and accommodation allowing him to present
+Docker Inc paid for MDB's flight and accommodation allowing him to present
 research at DockerCon Europe.
 
 # Authors' contributions
 
-PB, JD, AB, ACM, AS and MB jointly conceived the idea of bioboxes. PB, JD and
-MB created bioboxes, implementing all code and creating documentation. AB and
+PB, JD, AB, ACM, AS and MDB jointly conceived the idea of bioboxes. PB, JD and
+MDB created bioboxes, implementing all code and creating documentation. AB and
 AS supervised PB's master thesis on bioboxes, directing the project and
-actively engaging in discussions. MB wrote the manuscript. PB, JD, AB and AS
+actively engaging in discussions. MDB wrote the manuscript. PB, JD, AB and AS
 revised the manuscript. All authors read and approved the final manuscript.
 
 # Authors' information
 
 PB, JD and AB are developers in the CAMI initiative to benchmark bioinformatics
-tools for metagenomics. ACM and AS are CAMI organisers. MB created
+tools for metagenomics. ACM and AS are CAMI organisers. MDB created
 nucleotid.es, a project to benchmark genome assembly software. Both of these
 projects use Docker containers to ensure benchmarking are reproducible.
 
@@ -238,7 +238,7 @@ Ouzounis, PLoS Comput Biol, Vol. 8, No. 4. (26 April 2012), e1002487
 No. 7546. (9 April 2015), pp. 151-152
 
 3) Creating a bioinformatics nation. Lincoln Stein, Nature, Vol. 417, No.
-6885. (09 May 2002), pp. 119-120, doi:10.1038/417119a
+\6885. (09 May 2002), pp. 119-120, doi:10.1038/417119a
 
 4) Scholarly context not found: one in five articles suffers from reference
 rot. Martin Klein, Herbert Van de Sompel, Robert Sanderson, Harihar Shankar,
