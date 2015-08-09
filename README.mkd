@@ -1,6 +1,14 @@
 ### Bioboxes Call for Action Commentary
 
-For bioboxes to be successful it should be adopted by the bioinformatics
-community when creating software. This repository contains the draft of a
-commentary manuscript which is a call to the bioinformatics community outlining
-the advantages of using containers and standardising their interfaces.
+This repository contains a commentary manuscript written as a call to the
+bioinformatics community to get involved. This outlines the advantages of using
+containers and standardising their interfaces.
+
+#### Building
+
+The article is written in markdown and can be converted to a word document
+using pandoc:
+
+~~~ bash
+pandoc -r markdown -w docx -o article.docx article.mkd
+~~~
