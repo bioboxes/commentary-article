@@ -47,7 +47,7 @@ Bioinformatics software is seen as research output and published as journal
 articles. This then follows that a bioinformatics software developer is
 measured by the same metric as a biologist studying novel protein mechanisms -
 the more articles the better. This has lead to proliferation of bioinformatics
-software - the Wikipedia page for sequence aligners alone lists 64 different
+software and the Wikipedia page for sequence aligners alone lists 64 different
 implementations.
 
 Perverse incentives have lead to a fire-and-forget approach to software;
