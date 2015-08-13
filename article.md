@@ -221,10 +221,12 @@ suggesting the name 'bioboxes'.
 
 **Box 1. Example of bioboxes command line interface.**
 
-pip install --user biobox\_cli
+~~~ bash
+pip install --user biobox_cli
 
-biobox run short\_read\_assembler bioboxes/velvet --input reads.fq.gz --output contigs.fa
-biobox run short\_read\_assembler bioboxes/megahit --input reads.fq.gz --output contigs.fa
+biobox run short_read_assembler bioboxes/velvet --input reads.fq.gz --output contigs.fa
+biobox run short_read_assembler bioboxes/megahit --input reads.fq.gz --output contigs.fa
+~~~
 
 **References** **{1st level heading}**
 
