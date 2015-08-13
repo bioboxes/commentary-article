@@ -3,16 +3,17 @@
 **Bioboxes: standardised containers for interchangeable bioinformatics
 software**
 
-Peter Belmann^1^, Johannes Dröge^2^, Andreas Bremges^1,2^, Alice C
-McHardy^2^, Alexander Sczyrba^1^ and Michael D Barton^3^\*
+Peter Belmann<sup>1</sup>, Johannes Dröge<sup>2</sup>, Andreas
+Bremges<sup>1,2</sup>, Alice C McHardy<sup>2</sup>, Alexander
+Sczyrba<sup>1</sup> and Michael D Barton<sup>3<sup>\*
 
-^1^Faculty of Technology and Center for Biotechnology, Bielefeld
+<sup>1</sup> Faculty of Technology and Center for Biotechnology, Bielefeld
 University, 33615 Bielefeld, Germany
 
-^2^Computational Biology of Infection Research, Helmholtz Centre for
+<sup>2</sup> Computational Biology of Infection Research, Helmholtz Centre for
 Infection Research, 38124 Braunschweig, Germany
 
-^3^DOE Joint Genome Institute, Walnut Creek, CA 94598, USA
+<sup>3</sup> DOE Joint Genome Institute, Walnut Creek, CA 94598, USA
 
 \*Correspondence: mail@michaelbarton.me.uk
 
@@ -62,7 +63,7 @@ buggy, inconsistent, and confusing tools \[3\]. This commentary addresses three
 prominent symptoms of this system: lack of software availability, difficulty
 installing software, and divergent formats and interfaces for common tasks.
 
-**Lack of software availability** {1st level heading}
+**Lack of software availability** **{1st level heading}**
 
 A ridiculous situation in the publication system is that publishing an article
 about software does not guarantee that the tool is actually available for use.
