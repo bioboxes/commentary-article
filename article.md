@@ -32,7 +32,7 @@ standardised interfaces to make bioinformatics software
 interchangeable.
 
 **Keywords**
-bioinformatics, software, Docker, standards, usability
+bioinformatics, software, Docker, standards, usability, reproducibility
 
 **{text}**
 
