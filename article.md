@@ -186,7 +186,7 @@ easily available and usable by a wider audience. Ultimately this drive for
 standardisation and the ensuing benefits will be successful only if they are
 both accepted and driven by the bioinformatics community itself.
 
-**Competing interests** **{1st level heading} **
+**Competing interests** **{1st level heading}**
 
 Docker Inc paid for MDB's flight and accommodation allowing him to present
 research at DockerCon Europe.
@@ -207,7 +207,7 @@ created nucleotid.es, a project to benchmark genome assembly software. Both of
 these projects use Docker containers to ensure that benchmarking is
 reproducible.
 
-**Acknowledgements** **{1st level heading} **
+**Acknowledgements** **{1st level heading}**
 
 The authors wish to thank Rutger Vos, Scott Edmunds, Yasset Perez-Riverol, and
 Felipe Leprevost for proofreading the article. The authors also wish to thank
@@ -236,25 +236,25 @@ biobox run short_read_assembler bioboxes/megahit --input reads.fq.gz --output co
 **References** **{1st level heading}**
 
 1. Ouzounis CA. Rise and demise of bioinformatics? Promise and progress. PLoS
-   Comput Biol. 2012;8:e1002487.
+   Comput Biol. 2012;8:e1002487, doi:10.1371/journal.pcbi.1002487
 
-2. Chang J. Core services: reward bioinformaticians. Nature. 2015;520:151-2.
+2. Chang J. Core services: reward bioinformaticians. Nature. 2015;520:151-2. doi:10.1038/520151a
 
-3. Stein L. Creating a bioinformatics nation. Nature. 2002;417:119-20.
+3. Stein L. Creating a bioinformatics nation. Nature. 2002;417:119-20, doi:10.1038/417119a
 
 4. Klein M, Van de Sompel H, Sanderson R, Shankar H, Balakireva L, Zhou K, et
    al. Scholarly context not found: one in five articles suffers from reference
-   rot. PloS One. 2014; 9:e115253.
+   rot. PloS One. 2014;9:e115253, doi:10.1371/journal.pone.0115253
 
 5. Docker. https://www.docker.com. Accessed 11 August 2015.
 
 6. Boettiger C. An introduction to Docker for reproducible research, with
    examples from the R environment. ACM SIGOPS Operating Systems Review. 2014;
-   49:71-9.
+   49:71-9, doi:10.1145/2723872.2723882
 
 7. Di Tommaso P, Palumbo E, Chatzou M, Prieto P, Heuer ML, Notredame C. The
    impact of Docker containers on the performance of genomic pipelines. PeerJ
-   PrePrints. 2015, doi:10.7287/peerj.preprints.1171v2.
+   PrePrints. 2015;3:e1428, doi:10.7287/peerj.preprints.1171v2
 
 8. nucleotid.es - an assembler catalogue. http://nucleotid.es. Accessed 11
    August 2015.
